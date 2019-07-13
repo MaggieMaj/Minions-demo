@@ -1,0 +1,136 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+*::before{
+  box-sizing:border-box;
+}
+*::after{
+  box-sizing:border-box;
+}
+.preview{
+  height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.minions{
+  width: 260px;
+  height: 445px;
+  position: relative;
+}
+.hair{
+  width: 70px;
+  height: 70px;
+  border:2px solid #1c1c1c;
+  position: absolute;
+  border-top:none;
+  border-bottom:none;
+}
+.hair.left{
+  border-top-right-radius:40px;
+  border-left:none;
+  right:50%;
+}
+.hair.right{
+  border-top-left-radius:40px;
+  border-right:none;
+  left:50%;
+}
+.head{
+  width: 260px;
+  height: 300px;
+  background: #ffe340;
+  border:1px solid blue;
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  position: absolute;
+  top:70px;
+  left:50%;
+  margin-left:-130px;
+}
+.strap{
+  height: 50px;
+  width: 260px;
+  position: absolute;
+  top: 70px;
+  background: #1c1c1c;
+}
+.glass{
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  border: 13px solid #707070;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+}
+.glass.left{
+  right:50%;
+}
+.glass.right{
+  left:50%;
+}
+.eye{
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border: 14px solid #5b350a;
+  border-radius: 50%;
+  position: absolute;
+  top:12px;
+}
+.eye.left{
+  right:50%;
+  margin-right:-30px;
+}
+.eye.right{
+  left:50%;
+  margin-left:-30px;
+}
+.eye::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top:3px;
+  margin-left:3px;
+}
+.lip{
+  width: 50px;
+  height: 30px;
+  border:5px solid #1c1c1c;
+  border-bottom-right-radius:40px 20px;
+  border-bottom-left-radius:40px 25px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  top:200px;
+  left:50%;
+  position: absolute;
+  margin-left:-25px;
+}
+.paints{
+  width: 260px;
+  height: 50px;
+  background: #2f54a2;
+  position: absolute;
+  border-bottom-right-radius:40px 20px;
+  border-bottom-left-radius:40px 25px;
+  bottom:25px;
+}
+.shoes{
+  width:40px;
+  height: 25px;
+  position: absolute;
+  background: #000;
+  border-radius:40px 40px 10px 10px;
+  bottom:0;
+}
+.shoes.left{
+  right:50%;
+  margin-right:20px;
+}
+.shoes.right{
+  left:50%;
+  margin-left:20px;
+}
